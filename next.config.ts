@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   // Optimize images with modern formats and aggressive caching
   images: {
     // Enable modern image formats for smaller file sizes (up to 60% smaller)
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/avif', 'image/.webp'],
     // Device sizes for responsive images
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     // Image sizes for srcset

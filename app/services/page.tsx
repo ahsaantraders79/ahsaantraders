@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         description: 'Professional waterproofing, heat proofing, and construction solutions in Karachi since 2017.',
         images: [
             {
-                url: '/images/commercial-roof-waterproofing.jpg',
+                url: '/images/commercial-roof-waterproofing.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Ahsaan Traders Professional Services',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Our Services | Ahsaan Traders',
         description: 'Professional waterproofing, heat proofing, and construction solutions in Karachi since 2017.',
-        images: ['/images/commercial-roof-waterproofing.jpg'],
+        images: ['/images/commercial-roof-waterproofing.webp'],
     },
     robots: {
         index: true,

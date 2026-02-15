@@ -12,14 +12,14 @@ import SectionHeader from '../ui/SectionHeader';
  */
 
 const clients = [
-    { name: 'Ali Builders', logo: '/copmany-logos/1.webp' },
-    { name: 'Lucky Cement (MACHS)', logo: '/copmany-logos/2.webp' },
-    { name: 'Arabian Traders', logo: '/copmany-logos/3.webp' },
-    { name: 'CNCD Hospital Korangi', logo: '/copmany-logos/4.webp' },
-    { name: 'Pioneer Engineering', logo: '/copmany-logos/5.webp' },
-    { name: 'Popular Juice', logo: '/copmany-logos/6.webp' },
-    { name: 'AHG Pvt Ltd', logo: '/copmany-logos/7.webp' },
-    { name: 'Appollo Houseware', logo: '/copmany-logos/8.webp' },
+    { name: 'Ali Builders', logo: '/copmany-logos/1..webp' },
+    { name: 'Lucky Cement (MACHS)', logo: '/copmany-logos/2..webp' },
+    { name: 'Arabian Traders', logo: '/copmany-logos/3..webp' },
+    { name: 'CNCD Hospital Korangi', logo: '/copmany-logos/4..webp' },
+    { name: 'Pioneer Engineering', logo: '/copmany-logos/5..webp' },
+    { name: 'Popular Juice', logo: '/copmany-logos/6..webp' },
+    { name: 'AHG Pvt Ltd', logo: '/copmany-logos/7..webp' },
+    { name: 'Appollo Houseware', logo: '/copmany-logos/8..webp' },
 ] as const;
 
 export default function ClientsSection() {

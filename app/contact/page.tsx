@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: 'Get a free waterproofing or construction quote. Call, WhatsApp, or fill our form. 500+ projects completed across Karachi.',
         images: [
             {
-                url: '/images/expert-construction-site-supervision.jpg',
+                url: '/images/expert-construction-site-supervision.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Contact Ahsaan Traders Karachi',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Contact Ahsaan Traders | Free Quote',
         description: 'Get a free waterproofing or construction quote. Call, WhatsApp, or fill our form.',
-        images: ['/images/expert-construction-site-supervision.jpg'],
+        images: ['/images/expert-construction-site-supervision.webp'],
     },
     robots: {
         index: true,
@@ -118,7 +118,7 @@ export default function ContactPage() {
             { '@type': 'State', name: 'Sindh' },
         ],
         priceRange: '$$',
-        image: 'https://ahsaantraders.com/images/expert-construction-site-supervision.jpg',
+        image: 'https://ahsaantraders.com/images/expert-construction-site-supervision.webp',
         sameAs: [
             'https://wa.me/923212420460',
         ],

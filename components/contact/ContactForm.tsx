@@ -50,7 +50,7 @@ export default function ContactForm() {
                     id="name"
                     name="name"
                     placeholder="Your name"
-                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.name ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
+                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-white border text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.name ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
                         }`}
                     required
                     autoComplete="name"
@@ -67,7 +67,7 @@ export default function ContactForm() {
                     id="phone"
                     name="phone"
                     placeholder="0300-1234567"
-                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.phone ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
+                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-white border text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.phone ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
                         }`}
                     required
                     autoComplete="tel"
@@ -84,7 +84,7 @@ export default function ContactForm() {
                     id="email"
                     name="email"
                     placeholder="email@example.com"
-                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.email ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
+                    className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-white border text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base ${state.errors?.email ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
                         }`}
                     required
                     autoComplete="email"
@@ -100,19 +100,19 @@ export default function ContactForm() {
                     <select
                         id="service"
                         name="service"
-                        className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base appearance-none ${state.errors?.service ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
+                        className={`w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-white border text-slate-900 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base appearance-none ${state.errors?.service ? 'border-red-300 focus:border-red-500' : 'border-slate-200 focus:border-blue-500'
                             }`}
                         required
                         defaultValue=""
                     >
-                        <option value="" disabled>Select a service</option>
-                        <option value="roof-waterproofing">Roof Waterproofing</option>
-                        <option value="basement-waterproofing">Basement Waterproofing</option>
-                        <option value="heat-proofing">Heat Proofing</option>
-                        <option value="tank-waterproofing">Water Tank Treatment</option>
-                        <option value="chemicals">Construction Chemicals</option>
-                        <option value="ready-mix">Ready-Mix Concrete</option>
-                        <option value="other">Other</option>
+                        <option value="" disabled className="text-slate-400">Select a service</option>
+                        <option value="roof-waterproofing" className="text-slate-900">Roof Waterproofing</option>
+                        <option value="basement-waterproofing" className="text-slate-900">Basement Waterproofing</option>
+                        <option value="heat-proofing" className="text-slate-900">Heat Proofing</option>
+                        <option value="tank-waterproofing" className="text-slate-900">Water Tank Treatment</option>
+                        <option value="chemicals" className="text-slate-900">Construction Chemicals</option>
+                        <option value="ready-mix" className="text-slate-900">Ready-Mix Concrete</option>
+                        <option value="other" className="text-slate-900">Other</option>
                     </select>
                     <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-slate-500">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ export default function ContactForm() {
                     name="message"
                     rows={3}
                     placeholder="Brief description of your requirements..."
-                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none text-sm sm:text-base"
+                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-white border border-slate-200 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none text-sm sm:text-base"
                 ></textarea>
             </div>
 

@@ -16,47 +16,47 @@ const projects = [
     {
         title: 'DHA Bungalow Basement',
         category: 'Basement Waterproofing',
-        image: '/images/basement-foundation-waterproofing.jpg',
+        image: '/images/basement-foundation-waterproofing.webp',
     },
     {
         title: 'Industrial Warehouse Roof',
         category: 'Heat Proofing',
-        image: '/images/commercial-roof-waterproofing.jpg',
+        image: '/images/commercial-roof-waterproofing.webp',
     },
     {
         title: 'CNCD Hospital Korangi',
         category: 'Commercial Project',
-        image: '/images/hospital-building-renovation-karachi.jpg',
+        image: '/images/hospital-building-renovation-karachi.webp',
     },
     {
         title: 'Underground Water Tank',
         category: 'Tank Waterproofing',
-        image: '/images/water-reservoir-tank-lining.jpg',
+        image: '/images/water-reservoir-tank-lining.webp',
     },
     {
         title: 'Residential Terrace',
         category: 'Roof Waterproofing',
-        image: '/images/terrace-waterproofing-finished.jpg',
+        image: '/images/terrace-waterproofing-finished.webp',
     },
     {
         title: 'Commercial Building',
         category: 'Heat Proofing',
-        image: '/images/industrial-shed-heat-insulation.jpg',
+        image: '/images/industrial-shed-heat-insulation.webp',
     },
     {
         title: 'Swimming Pool Construction',
         category: 'Waterproofing',
-        image: '/images/swimming-pool-waterproofing-karachi.jpg',
+        image: '/images/swimming-pool-waterproofing-karachi.webp',
     },
     {
         title: 'Concrete Block Supply',
         category: 'Material Supply',
-        image: '/images/solid-cement-blocks-construction.jpg',
+        image: '/images/solid-cement-blocks-construction.webp',
     },
     {
         title: 'Roof Leakage Repair',
         category: 'Maintenance',
-        image: '/images/roof-waterproofing-before-after.jpg',
+        image: '/images/roof-waterproofing-before-after.webp',
     },
 ] as const;
 

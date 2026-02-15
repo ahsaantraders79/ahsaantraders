@@ -15,7 +15,7 @@ const caseStudies = [
             'Internal temperature reduced by 6-8°C.',
             'Estimated energy savings of 15% on cooling.',
         ],
-        image: '/images/commercial-roof-waterproofing.jpg',
+        image: '/images/commercial-roof-waterproofing.webp',
         tags: ['Industrial', 'Roofing', 'Heat Proofing'],
     },
     {
@@ -29,7 +29,7 @@ const caseStudies = [
             'Successfully converted into a home theater.',
             'Client property value preserved.',
         ],
-        image: '/images/basement-foundation-waterproofing.jpg',
+        image: '/images/basement-foundation-waterproofing.webp',
         tags: ['Residential', 'Basement', 'Repair'],
     },
     {
@@ -43,7 +43,7 @@ const caseStudies = [
             'Aesthetically pleasing white finish.',
             'Project completed in just 4 days with minimal disturbance.',
         ],
-        image: '/images/terrace-waterproofing-finished.jpg',
+        image: '/images/terrace-waterproofing-finished.webp',
         tags: ['Commercial', 'Terrace', 'Maintenance'],
     },
 ];

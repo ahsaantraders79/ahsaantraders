@@ -9,7 +9,7 @@ export default function CompanyStory() {
                     <div className="relative">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/karachi-team-2.png"
+                                src="/images/karachi-team-2.webp"
                                 alt="Ahsaan Traders professional team"
                                 width={600}
                                 height={450}

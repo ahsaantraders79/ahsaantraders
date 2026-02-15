@@ -11,7 +11,7 @@ export const post: BlogPost = {
     updatedDate: '2026-02-15',
     readTime: '8 min read',
     author: 'Waqas Ahmad',
-    coverImage: '/images/karachi-roof-real.png',
+    coverImage: '/images/karachi-roof-real.webp',
     tags: ['Roof Waterproofing', 'Karachi', 'Leakage Solution', 'Home Maintenance'],
     pinned: true,
     category: 'Waterproofing',

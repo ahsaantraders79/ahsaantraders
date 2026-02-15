@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         description: 'Browse our gallery of waterproofing and construction projects completed across Karachi.',
         images: [
             {
-                url: '/images/terrace-waterproofing-application.jpg',
+                url: '/images/terrace-waterproofing-application.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Ahsaan Traders Project Gallery',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Project Gallery | Ahsaan Traders',
         description: 'Browse our gallery of waterproofing and construction projects in Karachi.',
-        images: ['/images/terrace-waterproofing-application.jpg'],
+        images: ['/images/terrace-waterproofing-application.webp'],
     },
     robots: {
         index: true,

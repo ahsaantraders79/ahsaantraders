@@ -9,7 +9,7 @@ const services = [
         title: 'Waterproofing & Leakage Solutions',
         description: 'Complete waterproofing solutions for all types of structures using premium-grade materials. We specialize in preventing and treating water damage with proven techniques and long-lasting results.',
         icon: <WaterproofingIcon size={28} />,
-        image: '/images/karachi-roof-coat-2.png',
+        image: '/images/karachi-roof-coat-2.webp',
         features: [
             'Roof waterproofing',
             'Basement waterproofing',
@@ -25,7 +25,7 @@ const services = [
         title: 'Heat Proofing Services',
         description: 'Advanced solar-reflective coatings and heat-resistant treatments that significantly reduce indoor temperatures. Energy-efficient solutions to combat Karachi\'s intense summer heat.',
         icon: <HeatProofingIcon size={28} />,
-        image: '/images/karachi-cool-roof.png',
+        image: '/images/karachi-cool-roof.webp',
         features: [
             'Roof heat proofing coatings',
             'Solar reflective coatings',
@@ -41,7 +41,7 @@ const services = [
         title: 'Construction Chemicals',
         description: 'High-performance construction chemicals from trusted brands for enhanced structural durability, waterproofing, and concrete strength.',
         icon: <ChemicalsIcon size={28} />,
-        image: '/images/karachi-chemicals.png',
+        image: '/images/karachi-chemicals.webp',
         features: [
             'Waterproofing chemicals',
             'High-performance sealants & adhesives',
@@ -57,7 +57,7 @@ const services = [
         title: 'Cemented Blocks Supply',
         description: 'High-strength cemented blocks manufactured with quality cement and aggregates for all types of construction projects.',
         icon: <BlocksIcon size={28} />,
-        image: '/images/concrete-hollow-blocks-stack.jpg',
+        image: '/images/concrete-hollow-blocks-stack.webp',
         features: [
             'High-strength cemented block supply',
             'Customized high-strength block solutions',
@@ -73,7 +73,7 @@ const services = [
         title: 'Ready-Mix Concrete Supplies',
         description: 'High-quality ready-mix concrete in various grades with on-time delivery across Karachi for all construction applications.',
         icon: <ReadyMixIcon size={28} />,
-        image: '/images/karachi-concrete-2.png',
+        image: '/images/karachi-concrete-2.webp',
         features: [
             'Standard ready-mix concrete grades',
             'High-strength concrete',
@@ -89,7 +89,7 @@ const services = [
         title: 'De-Watering Services',
         description: 'Professional de-watering solutions for construction sites, basements, and flooded areas using modern pumping equipment.',
         icon: <DewateringIcon size={28} />,
-        image: '/images/karachi-basement.png',
+        image: '/images/karachi-basement.webp',
         features: [
             'Construction site dewatering',
             'Basement water removal',

@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
         updatedDate: '2026-02-15',
         readTime: '8 min read',
         author: 'Waqas Ahmad',
-        coverImage: '/images/karachi-roof-real.png', // Reusing existing relevant image
+        coverImage: '/images/karachi-roof-real.webp', // Reusing existing relevant image
         tags: ['Roof Waterproofing', 'Karachi', 'Leakage Solution', 'Home Maintenance'],
         pinned: true,
         faq: [

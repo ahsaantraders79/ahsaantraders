@@ -326,7 +326,7 @@ export default async function ServiceDetailPage({
 
             {/* ══════ SECTION 6: Benefits + Materials ══════ */}
             <section className="py-16 sm:py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/images/karachi-roof-real.png')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+                <div className="absolute inset-0 bg-[url('/images/karachi-roof-real.webp')] bg-cover bg-center opacity-10 mix-blend-overlay" />
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div>

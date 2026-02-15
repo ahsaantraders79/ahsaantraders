@@ -25,7 +25,7 @@ export default function StatsSection() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/commercial-roof-waterproofing-project.jpg"
+                    src="/images/commercial-roof-waterproofing-project.webp"
                     alt="Background"
                     fill
                     className="object-cover"

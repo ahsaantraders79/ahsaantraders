@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     description: "Expert waterproofing, heat proofing, and construction solutions in Karachi since 2017.",
     images: [
       {
-        url: "/images/Roof1.JPG",
+        url: "/images/Roof1.webp",
         width: 1200,
         height: 630,
         alt: "Ahsaan Traders Waterproofing Services",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ahsaan Traders | Waterproofing & Construction Solutions",
     description: "Expert waterproofing, heat proofing, and construction solutions in Karachi since 2017.",
-    images: ["/images/Roof1.JPG"],
+    images: ["/images/Roof1.webp"],
   },
   robots: {
     index: true,
@@ -107,8 +107,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "name": "Ahsaan Traders",
-  "image": "https://ahsaantraders.com/logo.webp",
-  "logo": "https://ahsaantraders.com/logo.webp",
+  "image": "https://ahsaantraders.com/logo..webp",
+  "logo": "https://ahsaantraders.com/logo..webp",
   "description": "Karachi's trusted provider of waterproofing, heat proofing, and construction solutions. Quality materials, expert workmanship, guaranteed results.",
   "address": {
     "@type": "PostalAddress",

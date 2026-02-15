@@ -514,7 +514,7 @@ function Header({ announcements }: { announcements?: string[] }) {
                         {/* Logo */}
                         <Link href="/" className="flex-shrink-0 flex items-center h-full py-2 z-20 group">
                             <Image
-                                src="/logo.webp"
+                                src="/logo..webp"
                                 alt="Ahsaan Traders"
                                 width={280}
                                 height={100}

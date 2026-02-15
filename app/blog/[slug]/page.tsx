@@ -73,10 +73,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         publisher: {
             '@type': 'Organization',
             name: 'Ahsaan Traders',
-            logo: { '@type': 'ImageObject', url: 'https://ahsaantraders.com/logo.webp' },
+            logo: { '@type': 'ImageObject', url: 'https://ahsaantraders.com/logo..webp' },
         },
         description: post.excerpt,
-        mainEntityOfPage: { '@type': 'WebPage', '@id': `https://ahsaantraders.com/blog/${post.slug}` },
+        mainEntityOfPage: { '@type': '.webpage', '@id': `https://ahsaantraders.com/blog/${post.slug}` },
         keywords: [post.primaryKeyword, ...post.tags].join(', '),
     };
 

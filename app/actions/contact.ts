@@ -54,35 +54,47 @@ export async function submitContactForm(prevState: any, formData: FormData): Pro
 
     try {
         const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST || 'smtppro.zoho.com',
+            host: process.env.SMTP_HOST || 'smtp.zoho.com', // Default to standard host
             port: parseInt(process.env.SMTP_PORT || '465'),
-            secure: true, // true for 465, false for other ports
+            secure: true,
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD,
             },
         });
 
+        // Verify connection configuration
+        await transporter.verify();
+        console.log('SMTP Connection Established Successfully');
+
         const mailOptions = {
-            from: `"Ahsaan Traders Website" <${process.env.SMTP_USER}>`, // sender address
-            to: process.env.CONTACT_EMAIL || process.env.SMTP_USER, // list of receivers
-            subject: `New Service Inquiry: ${service}`, // Subject line
+            from: `"Ahsaan Traders Website" <${process.env.SMTP_USER}>`,
+            to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
+            replyTo: email, // Allow reply directly to customer
+            subject: `New Service Inquiry: ${service}`,
             html: `
                 <h2>New Contact Form Submission</h2>
-                <p><strong>Name:</strong> ${name}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone}</p>
-                <p><strong>Service:</strong> ${service}</p>
-                <p><strong>Message:</strong></p>
-                <blockquote style="background: #f9f9f9; padding: 10px; border-left: 4px solid #ccc;">${message}</blockquote>
+                <div style="font-family: Arial, sans-serif; color: #333;">
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Phone:</strong> ${phone}</p>
+                    <p><strong>Service:</strong> ${service}</p>
+                    <p><strong>Message:</strong></p>
+                    <blockquote style="background: #f9f9f9; padding: 15px; border-left: 4px solid #007bff; margin: 0;">${message || 'No message provided.'}</blockquote>
+                </div>
             `,
         };
 
         await transporter.sendMail(mailOptions);
         console.log('Email sent successfully via Zoho SMTP');
 
-    } catch (error) {
-        console.error('Error sending email:', error);
+    } catch (error: any) {
+        console.error('------- SMTP ERROR DETAILS -------');
+        console.error('Message:', error.message);
+        console.error('Code:', error.code);
+        console.error('Response:', error.response);
+        console.error('----------------------------------');
+
         return {
             success: false,
             errors: { root: 'Failed to send message. Please try again later or contact us directly at 0300-8235699.' }

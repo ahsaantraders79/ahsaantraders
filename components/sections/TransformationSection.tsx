@@ -63,7 +63,7 @@ export default function TransformationSection() {
                         {/* After Image (Background) - Clean Finished Roof */}
                         <div className="absolute inset-0">
                             <Image
-                                src="/images/after.webp"
+                                src="/images/after..webp"
                                 alt="After Waterproofing Treatment"
                                 fill
                                 className="object-cover"
@@ -81,7 +81,7 @@ export default function TransformationSection() {
                             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
                         >
                             <Image
-                                src="/images/before.webp"
+                                src="/images/before..webp"
                                 alt="Before Waterproofing"
                                 fill
                                 className="object-cover"

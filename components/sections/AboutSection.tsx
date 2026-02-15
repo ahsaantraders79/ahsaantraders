@@ -31,7 +31,7 @@ export default function AboutSection() {
                     <div className="relative order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-slate-900/10">
                             <Image
-                                src="/images/professional-waterproofing-workers-team.jpg"
+                                src="/images/professional-waterproofing-workers-team.webp"
                                 alt="Ahsaan Traders professional waterproofing team"
                                 width={600}
                                 height={450}

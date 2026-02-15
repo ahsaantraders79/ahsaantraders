@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         description: 'View completed waterproofing & construction projects across Karachi with before/after results.',
         images: [
             {
-                url: '/images/roof-waterproofing-before-after.jpg',
+                url: '/images/roof-waterproofing-before-after.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Ahsaan Traders Project Portfolio',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Our Projects | Ahsaan Traders Portfolio',
         description: 'View completed waterproofing & construction projects across Karachi.',
-        images: ['/images/roof-waterproofing-before-after.jpg'],
+        images: ['/images/roof-waterproofing-before-after.webp'],
     },
     robots: {
         index: true,

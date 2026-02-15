@@ -16,10 +16,10 @@ import Button from '../ui/Button';
  */
 
 const slides = [
-    { image: '/images/commercial-roof-waterproofing.jpg', title: 'Industrial Waterproofing' },
-    { image: '/images/terrace-waterproofing-finished.jpg', title: 'Heat Proofing Solutions' },
-    { image: '/images/basement-foundation-waterproofing.jpg', title: 'Basement Seepage Control' },
-    { image: '/images/roof-waterproofing-before-after.jpg', title: 'Roof Leakage Repair' },
+    { image: '/images/commercial-roof-waterproofing.webp', title: 'Industrial Waterproofing' },
+    { image: '/images/terrace-waterproofing-finished.webp', title: 'Heat Proofing Solutions' },
+    { image: '/images/basement-foundation-waterproofing.webp', title: 'Basement Seepage Control' },
+    { image: '/images/roof-waterproofing-before-after.webp', title: 'Roof Leakage Repair' },
 ];
 
 // Memoized Slide component to prevent unnecessary re-renders
@@ -114,7 +114,7 @@ function HeroSection() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/karachi-cool-roof.png"
+                    src="/images/karachi-cool-roof.webp"
                     alt="Waterproofing Project Background"
                     fill
                     className="object-cover opacity-40 mix-blend-overlay"

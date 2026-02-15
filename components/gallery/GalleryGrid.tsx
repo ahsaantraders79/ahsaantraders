@@ -4,17 +4,17 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const galleryImages = [
-    { src: '/images/basement-foundation-waterproofing.jpg', alt: 'Basement Foundation Waterproofing', category: 'Waterproofing' },
-    { src: '/images/commercial-roof-waterproofing.jpg', alt: 'Commercial Roof Waterproofing', category: 'Waterproofing' },
-    { src: '/images/roof-waterproofing-before-after.jpg', alt: 'Roof Waterproofing Before & After', category: 'Waterproofing' },
-    { src: '/images/terrace-waterproofing-finished.jpg', alt: 'Terrace Waterproofing Finished', category: 'Waterproofing' },
-    { src: '/images/expert-construction-site-supervision.jpg', alt: 'Expert Site Supervision', category: 'Construction' },
-    { src: '/images/professional-waterproofing-workers-team.jpg', alt: 'Professional Waterproofing Team', category: 'Team' },
-    { src: '/images/hospital-building-renovation-karachi.jpg', alt: 'Hospital Renovation Project', category: 'Construction' },
-    { src: '/images/water-reservoir-tank-lining.jpg', alt: 'Water Tank Lining', category: 'Waterproofing' },
-    { src: '/images/industrial-shed-heat-insulation.jpg', alt: 'Industrial Heat Insulation', category: 'Heat Proofing' },
-    { src: '/images/swimming-pool-waterproofing-karachi.jpg', alt: 'Swimming Pool Waterproofing', category: 'Waterproofing' },
-    { src: '/images/solid-cement-blocks-construction.jpg', alt: 'Solid Cement Blocks', category: 'Construction' },
+    { src: '/images/basement-foundation-waterproofing.webp', alt: 'Basement Foundation Waterproofing', category: 'Waterproofing' },
+    { src: '/images/commercial-roof-waterproofing.webp', alt: 'Commercial Roof Waterproofing', category: 'Waterproofing' },
+    { src: '/images/roof-waterproofing-before-after.webp', alt: 'Roof Waterproofing Before & After', category: 'Waterproofing' },
+    { src: '/images/terrace-waterproofing-finished.webp', alt: 'Terrace Waterproofing Finished', category: 'Waterproofing' },
+    { src: '/images/expert-construction-site-supervision.webp', alt: 'Expert Site Supervision', category: 'Construction' },
+    { src: '/images/professional-waterproofing-workers-team.webp', alt: 'Professional Waterproofing Team', category: 'Team' },
+    { src: '/images/hospital-building-renovation-karachi.webp', alt: 'Hospital Renovation Project', category: 'Construction' },
+    { src: '/images/water-reservoir-tank-lining.webp', alt: 'Water Tank Lining', category: 'Waterproofing' },
+    { src: '/images/industrial-shed-heat-insulation.webp', alt: 'Industrial Heat Insulation', category: 'Heat Proofing' },
+    { src: '/images/swimming-pool-waterproofing-karachi.webp', alt: 'Swimming Pool Waterproofing', category: 'Waterproofing' },
+    { src: '/images/solid-cement-blocks-construction.webp', alt: 'Solid Cement Blocks', category: 'Construction' },
 ];
 
 const categories = ['All', ...Array.from(new Set(galleryImages.map(img => img.category)))];
@@ -38,8 +38,8 @@ export default function GalleryGrid() {
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 ${activeCategory === cat
-                                    ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
-                                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                                ? 'bg-blue-600 text-white shadow-md shadow-blue-500/20'
+                                : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                                 }`}
                         >
                             {cat}
