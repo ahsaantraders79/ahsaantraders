@@ -7,6 +7,7 @@ import { Header, Footer } from "@/components/layout";
 import { Suspense } from "react";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import CookieConsent from "@/components/ui/CookieConsent";
 
 // Revalidate all pages every hour (ISR) to keep content fresh for Google
 export const revalidate = 3600;
@@ -107,8 +108,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "name": "Ahsaan Traders",
-  "image": "https://ahsaantraders.com/logo..webp",
-  "logo": "https://ahsaantraders.com/logo..webp",
+  "image": "https://ahsaantraders.com/logo.webp",
+  "logo": "https://ahsaantraders.com/logo.webp",
   "description": "Karachi's trusted provider of waterproofing, heat proofing, and construction solutions. Quality materials, expert workmanship, guaranteed results.",
   "address": {
     "@type": "PostalAddress",
@@ -196,6 +197,7 @@ export default function RootLayout({
         <Header announcements={announcements} />
         <main>{children}</main>
         <Footer />
+        <CookieConsent />
 
         {/* WhatsApp Floating Button with Suspense */}
         <Suspense fallback={<WhatsAppButtonSkeleton />}>

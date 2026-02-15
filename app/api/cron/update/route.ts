@@ -5,6 +5,14 @@ import { revalidatePath } from 'next/cache';
 export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
+    // Security Check: Verify Authorization header or ?secret= query param
+    const authHeader = request.headers.get('authorization');
+    const secret = request.nextUrl.searchParams.get('secret');
+
+    if (authHeader !== `Bearer ${process.env.CRON_SECRET}` && secret !== process.env.CRON_SECRET) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     try {
         console.log("Triggering daily update...");
 
