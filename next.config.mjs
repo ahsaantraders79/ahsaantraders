@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // Enable production optimization to remove console.* calls
+    compiler: {
+        removeConsole: process.env.NODE_ENV === "production",
+    },
     images: {
         // Suppress quality warnings by allowing used qualities
         deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

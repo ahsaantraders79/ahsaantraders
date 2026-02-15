@@ -15,7 +15,7 @@ import { CheckIcon, TrophyIcon } from '../ui/Icons';
 const features = [
     'Premium waterproofing materials',
     'Strength-gainer admixtures',
-    '8+ years industry experience',
+    '9+ years industry experience',
     'Residential & commercial projects',
     'Industrial clients served',
     'On-time project delivery',
@@ -32,12 +32,11 @@ export default function AboutSection() {
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-slate-900/10">
                             <Image
                                 src="/images/professional-waterproofing-workers-team.jpg"
-                                alt="Ahsan Traders professional waterproofing team"
+                                alt="Ahsaan Traders professional waterproofing team"
                                 width={600}
                                 height={450}
                                 className="object-cover w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]"
                                 loading="lazy"
-                                quality={80}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
                         </div>
@@ -49,7 +48,7 @@ export default function AboutSection() {
                                     <TrophyIcon size={20} className="text-white" />
                                 </div>
                                 <div>
-                                    <p className="text-xl sm:text-2xl font-bold text-slate-800">8+</p>
+                                    <p className="text-xl sm:text-2xl font-bold text-slate-800">9+</p>
                                     <p className="text-xs text-slate-500">Years</p>
                                 </div>
                             </div>
@@ -62,7 +61,7 @@ export default function AboutSection() {
                     {/* Content Side */}
                     <div className="order-1 lg:order-2">
                         <span className="inline-block px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-blue-50 text-blue-600 mb-3 sm:mb-4">
-                            About Ahsan Traders
+                            About Ahsaan Traders
                         </span>
 
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-4 sm:mb-5 leading-tight">
@@ -71,7 +70,7 @@ export default function AboutSection() {
                         </h2>
 
                         <p className="text-base sm:text-lg text-slate-600 mb-4 leading-relaxed">
-                            Ahsan Traders is a trusted service provider in waterproofing, heat proofing, construction chemicals, cemented blocks, strength-gainer admixtures, and ready-mix concrete supplies.
+                            Ahsaan Traders is a trusted service provider in waterproofing, heat proofing, construction chemicals, cemented blocks, strength-gainer admixtures, and ready-mix concrete supplies.
                         </p>
 
                         <p className="text-sm sm:text-base text-slate-600 mb-6 leading-relaxed">

@@ -35,7 +35,7 @@ const features = [
     },
     {
         title: 'Proven Results',
-        description: '8+ years of expertise with 500+ successful projects across Karachi and Sindh region.',
+        description: '9+ years of expertise with 500+ successful projects across Karachi and Sindh region.',
         icon: <TrophyIcon size={26} />,
     },
     {
@@ -52,7 +52,7 @@ export default function WhyChooseUsSection() {
                 {/* Section Header */}
                 <SectionHeader
                     label="Why Choose Us"
-                    title="The Ahsan Traders Advantage"
+                    title="The Ahsaan Traders Advantage"
                     subtitle="Experience the difference of working with Karachi's trusted waterproofing experts"
                 />
 

@@ -14,7 +14,7 @@ import { BuildingIcon, UsersIcon, TrophyIcon, ClockIcon } from '../ui/Icons';
 
 const stats = [
     { value: '500+', label: 'Projects Done', icon: <BuildingIcon size={22} /> },
-    { value: '8+', label: 'Years Experience', icon: <ClockIcon size={22} /> },
+    { value: '9+', label: 'Years Experience', icon: <ClockIcon size={22} /> },
     { value: '50+', label: 'Happy Clients', icon: <UsersIcon size={22} /> },
     { value: '100%', label: 'Satisfaction', icon: <TrophyIcon size={22} /> },
 ] as const;
@@ -31,7 +31,6 @@ export default function StatsSection() {
                     className="object-cover"
                     sizes="100vw"
                     loading="lazy"
-                    quality={60}
                 />
             </div>
 

@@ -16,10 +16,10 @@ import Button from '../ui/Button';
  */
 
 const slides = [
-    { image: '/images/roof-leaking-seepage-solution.jpg', title: 'Waterproofing' },
-    { image: '/images/cool-roof-heat-resistant-paint.jpg', title: 'Heat Proofing' },
-    { image: '/images/underground-water-tank-leakage-repair.jpg', title: 'Basement Solutions' },
-    { image: '/images/water-reservoir-tank-lining.jpg', title: 'Tank Treatment' },
+    { image: '/images/commercial-roof-waterproofing.jpg', title: 'Industrial Waterproofing' },
+    { image: '/images/terrace-waterproofing-finished.jpg', title: 'Heat Proofing Solutions' },
+    { image: '/images/basement-foundation-waterproofing.jpg', title: 'Basement Seepage Control' },
+    { image: '/images/roof-waterproofing-before-after.jpg', title: 'Roof Leakage Repair' },
 ];
 
 // Memoized Slide component to prevent unnecessary re-renders
@@ -50,7 +50,6 @@ const Slide = memo(function Slide({
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={index === 0}
                     loading={index === 0 ? 'eager' : 'lazy'}
-                    quality={85}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
             </div>
@@ -111,19 +110,19 @@ function HeroSection() {
     );
 
     return (
-        <section className="relative w-full min-h-[100svh] overflow-hidden bg-slate-900 pt-[100px] pb-[10px]">
-            {/* Rich Gradient Background */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900 via-slate-900 to-black z-0" />
-
-            {/* Mesh/Grid Pattern Overlay */}
-            <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03] z-0" style={{ backgroundSize: '30px 30px' }} />
-
-            {/* Gradient Orbs - glowing effects */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-                <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] will-change-transform animate-pulse-slow" />
-                <div className="absolute top-[40%] -left-[10%] w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[100px] will-change-transform" />
-                <div className="absolute bottom-[10%] right-[20%] w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[100px] will-change-transform" />
+        <section className="relative w-full min-h-[100svh] overflow-hidden bg-slate-900 pt-[140px] pb-[10px]">
+            {/* Background Image with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/images/karachi-cool-roof.png"
+                    alt="Waterproofing Project Background"
+                    fill
+                    className="object-cover opacity-40 mix-blend-overlay"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/80" />
             </div>
+
 
             {/* Main Content */}
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-28 pb-8 sm:pb-12 min-h-[100svh] flex flex-col justify-center">
@@ -140,9 +139,9 @@ function HeroSection() {
 
                         {/* Heading */}
                         <div className="mb-6 sm:mb-8 relative z-10">
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-4">
-                                Waterproofing <br className="hidden sm:block" />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-white">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-4 drop-shadow-lg">
+                                Waterproofing
+                                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-white pb-2">
                                     That Lasts.
                                 </span>
                             </h1>
@@ -164,13 +163,16 @@ function HeroSection() {
                         {/* Trust Badges */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-slate-300 text-xs sm:text-sm font-medium">
                             <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
-                                <span className="text-amber-400">★</span> 5-Year Warranty
+                                <svg className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                                5-Year Warranty
                             </div>
                             <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
-                                <span className="text-blue-400">✓</span> Certified Experts
+                                <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" strokeWidth={3} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                                Certified Experts
                             </div>
                             <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
-                                <span className="text-green-400">●</span> 24/7 Support
+                                <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
+                                24/7 Support
                             </div>
                         </div>
                     </div>

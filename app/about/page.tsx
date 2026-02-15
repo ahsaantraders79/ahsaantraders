@@ -1,20 +1,52 @@
 /**
- * About Page - Company story, mission, values
+ * About Page - Company story, mission, values, and timeline
+ * 
+ * SEO: Organization trust signals, E-E-A-T, company credentials
  */
 
 import { Metadata } from 'next';
-import AboutHero from './components/AboutHero';
-import CompanyStory from './components/CompanyStory';
-import MissionSection from './components/MissionSection';
-import ValuesSection from './components/ValuesSection';
-import TimelineSection from './components/TimelineSection';
-import { StatsSection, ClientsSection, CTASection } from '@/components/sections';
+import AboutHero from '@/components/about/AboutHero';
+import CompanyStory from '@/components/about/CompanyStory';
+import MissionSection from '@/components/about/MissionSection';
+import ValuesSection from '@/components/about/ValuesSection';
+import TimelineSection from '@/components/about/TimelineSection';
+import { StatsSection, CTASection } from '@/components/sections';
 
 export const metadata: Metadata = {
-    title: 'About Us | Ahsan Traders - Waterproofing Experts Since 2017',
-    description: 'Learn about Ahsan Traders - Karachi\'s trusted waterproofing and construction solutions provider since 2017. Quality materials, expert workmanship, guaranteed results.',
-    keywords: 'ahsan traders about, waterproofing company karachi, construction company sindh, about ahsan traders',
+    title: 'About Ahsaan Traders | Waterproofing Experts Since 2017',
+    description: 'Learn about Ahsaan Traders Karachi\'s trusted waterproofing and construction company. 500+ projects completed, certified experts, and 5-year warranty on all work.',
+    keywords: 'about Ahsaan traders, waterproofing company karachi, construction company karachi, waterproofing experts, trusted contractors karachi',
+    alternates: {
+        canonical: 'https://ahsaantraders.com/about',
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'en_PK',
+        url: 'https://ahsaantraders.com/about',
+        siteName: 'Ahsaan Traders',
+        title: 'About Ahsaan Traders | Waterproofing Experts',
+        description: 'Karachi\'s trusted waterproofing and construction company since 2017. 500+ projects, certified experts.',
+        images: [
+            {
+                url: '/images/professional-waterproofing-workers-team.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Ahsaan Traders Professional Team',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'About Ahsaan Traders | Waterproofing Experts',
+        description: 'Karachi\'s trusted waterproofing and construction company since 2017.',
+        images: ['/images/professional-waterproofing-workers-team.jpg'],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
+
 
 export default function AboutPage() {
     return (
@@ -23,9 +55,8 @@ export default function AboutPage() {
             <CompanyStory />
             <MissionSection />
             <ValuesSection />
-            <TimelineSection />
             <StatsSection />
-            <ClientsSection />
+            <TimelineSection />
             <CTASection />
         </>
     );

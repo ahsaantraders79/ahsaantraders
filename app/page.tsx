@@ -16,7 +16,12 @@ import {
   CTASection,
   TransformationSection,
   CostCalculatorSection,
+  PackagesSection,
 } from '@/components/sections';
+
+
+// Revalidate page every hour to keep content fresh for ISR
+export const revalidate = 3600;
 
 export default function HomePage() {
   return (
@@ -28,6 +33,7 @@ export default function HomePage() {
       <StatsSection />
       <ProjectsSection />
       <WhyChooseUsSection />
+      <PackagesSection />
       <CostCalculatorSection />
       <ClientsSection />
       <CTASection />

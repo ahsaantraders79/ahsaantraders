@@ -24,21 +24,21 @@ const services = [
         title: 'Waterproofing & Leakage Solutions',
         description: 'Complete solutions including roof waterproofing, basement waterproofing, water tank treatment (underground & overhead), bathroom/kitchen leakage, terrace waterproofing, crack sealing, and expansion joint filling.',
         icon: <WaterproofingIcon size={26} />,
-        image: '/images/roof-leaking-seepage-solution.jpg',
+        image: '/images/bitumen-membrane-roof-application.jpg',
         href: '/services#waterproofing',
     },
     {
         title: 'Heat Proofing Services',
         description: 'Roof heat proofing coatings, solar reflective treatments, and energy-saving coatings. Effective heat reduction treatment for homes, buildings, and warehouses to combat Karachi\'s intense summer heat.',
         icon: <HeatProofingIcon size={26} />,
-        image: '/images/cool-roof-heat-resistant-paint.jpg',
+        image: '/images/heat-reflective-roof-coating-white.jpg',
         href: '/services#heat-proofing',
     },
     {
         title: 'Construction Chemicals',
         description: 'Premium waterproofing chemicals, high-performance sealants & adhesives, concrete admixtures including strength gainers, crack fillers, repair mortars, and bonding agents for enhanced durability.',
         icon: <ChemicalsIcon size={26} />,
-        image: '/images/premium-waterproofing-materials-bucket.jpg',
+        image: '/images/construction-chemical-drums-supply.jpg',
         href: '/services#chemicals',
     },
     {
@@ -59,7 +59,7 @@ const services = [
         title: 'De-Watering Services',
         description: 'Professional de-watering solutions for construction sites, basements, and flooded areas. We provide efficient water removal services using modern pumping equipment.',
         icon: <DewateringIcon size={26} />,
-        image: '/images/expert-construction-site-supervision.jpg',
+        image: '/images/underground-water-tank-leakage-repair.jpg',
         href: '/services#dewatering',
     },
 ] as const;

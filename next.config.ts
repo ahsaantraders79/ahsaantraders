@@ -20,6 +20,8 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
     // Enable remote patterns if needed
     remotePatterns: [],
+    // Allow various image qualities
+    qualities: [60, 75, 80, 85, 90, 100],
   },
 
   // Compiler optimizations

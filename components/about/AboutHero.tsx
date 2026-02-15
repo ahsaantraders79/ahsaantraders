@@ -1,0 +1,14 @@
+import Breadcrumb from '@/components/ui/Breadcrumb';
+
+export default function AboutHero() {
+    return (
+        <Breadcrumb
+            title="About Ahsaan Traders"
+            subtitle="Your trusted partner in waterproofing and construction solutions since 2017"
+            items={[
+                { label: 'Home', href: '/' },
+                { label: 'About' }
+            ]}
+        />
+    );
+}

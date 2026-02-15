@@ -16,12 +16,12 @@ const projects = [
     {
         title: 'DHA Bungalow Basement',
         category: 'Basement Waterproofing',
-        image: '/images/underground-water-tank-leakage-repair.jpg',
+        image: '/images/basement-foundation-waterproofing.jpg',
     },
     {
         title: 'Industrial Warehouse Roof',
         category: 'Heat Proofing',
-        image: '/images/factory-warehouse-heat-proofing.jpg',
+        image: '/images/commercial-roof-waterproofing.jpg',
     },
     {
         title: 'CNCD Hospital Korangi',
@@ -36,7 +36,7 @@ const projects = [
     {
         title: 'Residential Terrace',
         category: 'Roof Waterproofing',
-        image: '/images/residential-bungalow-waterproofing.jpg',
+        image: '/images/terrace-waterproofing-finished.jpg',
     },
     {
         title: 'Commercial Building',
@@ -56,7 +56,7 @@ const projects = [
     {
         title: 'Roof Leakage Repair',
         category: 'Maintenance',
-        image: '/images/roof-leakage-repair-service.jpg',
+        image: '/images/roof-waterproofing-before-after.jpg',
     },
 ] as const;
 

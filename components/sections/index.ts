@@ -9,3 +9,5 @@ export { default as ClientsSection } from './ClientsSection';
 export { default as CTASection } from './CTASection';
 export { default as TransformationSection } from './TransformationSection';
 export { default as CostCalculatorSection } from './CostCalculatorSection';
+export { default as PackagesSection } from './PackagesSection';
+

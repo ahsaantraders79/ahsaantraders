@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../ui/Button';
+import ContactForm from '../contact/ContactForm';
 import { PhoneIcon, EmailIcon, WhatsAppIcon, LocationIcon } from '../ui/Icons';
 
 /**
@@ -40,23 +40,28 @@ export default function CTASection() {
 
                         {/* Contact Options */}
                         <div className="space-y-4 mb-6 sm:mb-8">
-                            <a href="tel:+923212420460" className="flex items-center gap-3 sm:gap-4 group">
-                                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-white/10 group-hover:bg-blue-500 flex items-center justify-center transition-colors">
+                            <div className="flex items-start gap-3 sm:gap-4">
+                                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <PhoneIcon size={18} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-slate-400">Call Us</p>
-                                    <p className="text-sm sm:text-base font-medium">0321-2420460 / 0300-8235699</p>
+                                    <p className="text-xs text-slate-400 mb-1">Call Us</p>
+                                    <a href="tel:+923212420460" className="block text-sm sm:text-base font-medium hover:text-blue-400 transition-colors">
+                                        0321-2420460
+                                    </a>
+                                    <a href="tel:+923008235699" className="block text-sm sm:text-base font-medium hover:text-blue-400 transition-colors mt-0.5">
+                                        0300-8235699
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
 
-                            <a href="mailto:ahsaantraders79@gmail.com" className="flex items-center gap-3 sm:gap-4 group">
+                            <a href="mailto:info@ahsaantraders.com" className="flex items-center gap-3 sm:gap-4 group">
                                 <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-white/10 group-hover:bg-blue-500 flex items-center justify-center transition-colors">
                                     <EmailIcon size={18} />
                                 </div>
                                 <div>
                                     <p className="text-xs text-slate-400">Email Us</p>
-                                    <p className="text-sm sm:text-base font-medium break-all">ahsaantraders79@gmail.com</p>
+                                    <p className="text-sm sm:text-base font-medium break-all">info@ahsaantraders.com</p>
                                 </div>
                             </a>
 
@@ -92,75 +97,7 @@ export default function CTASection() {
                             Fill out the form and we&apos;ll respond within 24 hours.
                         </p>
 
-                        <form className="space-y-4" action="/api/contact" method="POST">
-                            <div>
-                                <label htmlFor="cta-name" className="block text-sm font-medium text-slate-700 mb-1.5">
-                                    Full Name *
-                                </label>
-                                <input
-                                    type="text"
-                                    id="cta-name"
-                                    name="name"
-                                    placeholder="Your name"
-                                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base"
-                                    required
-                                    autoComplete="name"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="cta-phone" className="block text-sm font-medium text-slate-700 mb-1.5">
-                                    Phone Number *
-                                </label>
-                                <input
-                                    type="tel"
-                                    id="cta-phone"
-                                    name="phone"
-                                    placeholder="0300-1234567"
-                                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base"
-                                    required
-                                    autoComplete="tel"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="cta-service" className="block text-sm font-medium text-slate-700 mb-1.5">
-                                    Service Required *
-                                </label>
-                                <select
-                                    id="cta-service"
-                                    name="service"
-                                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all text-sm sm:text-base"
-                                    required
-                                >
-                                    <option value="">Select a service</option>
-                                    <option value="roof-waterproofing">Roof Waterproofing</option>
-                                    <option value="basement-waterproofing">Basement Waterproofing</option>
-                                    <option value="heat-proofing">Heat Proofing</option>
-                                    <option value="tank-waterproofing">Water Tank Treatment</option>
-                                    <option value="chemicals">Construction Chemicals</option>
-                                    <option value="ready-mix">Ready-Mix Concrete</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label htmlFor="cta-message" className="block text-sm font-medium text-slate-700 mb-1.5">
-                                    Message (Optional)
-                                </label>
-                                <textarea
-                                    id="cta-message"
-                                    name="message"
-                                    rows={3}
-                                    placeholder="Brief description of your requirements..."
-                                    className="w-full px-3.5 py-2.5 sm:py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none text-sm sm:text-base"
-                                ></textarea>
-                            </div>
-
-                            <Button type="submit" variant="primary" size="lg" fullWidth>
-                                Send Message
-                            </Button>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </div>

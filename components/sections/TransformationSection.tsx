@@ -9,24 +9,26 @@ export default function TransformationSection() {
     const [isDragging, setIsDragging] = useState(false);
     const sliderRef = useRef<HTMLDivElement>(null);
 
-    const handleMove = (event: React.MouseEvent | React.TouchEvent | MouseEvent | TouchEvent) => {
-        if (!isDragging || !sliderRef.current) return;
-
-        const rect = sliderRef.current.getBoundingClientRect();
-        const x = 'touches' in event ? event.touches[0].clientX : (event as MouseEvent).clientX;
-
-        // Calculate position relative to the container
-        const position = ((x - rect.left) / rect.width) * 100;
-
-        // Clamp between 0 and 100
-        setSliderPosition(Math.min(Math.max(position, 0), 100));
-    };
-
     const handleMouseDown = () => setIsDragging(true);
-    const handleMouseUp = () => setIsDragging(false);
 
     // Global event listeners for smooth dragging outside element
     useEffect(() => {
+        const handleMove = (event: MouseEvent | TouchEvent) => {
+            if (!sliderRef.current) return;
+
+            const rect = sliderRef.current.getBoundingClientRect();
+            // Check for clientX in both MouseEvent and TouchEvent
+            const clientX = 'touches' in event ? event.touches[0].clientX : (event as MouseEvent).clientX;
+
+            // Calculate position relative to the container
+            const position = ((clientX - rect.left) / rect.width) * 100;
+
+            // Clamp between 0 and 100
+            setSliderPosition(Math.min(Math.max(position, 0), 100));
+        };
+
+        const handleMouseUp = () => setIsDragging(false);
+
         if (isDragging) {
             window.addEventListener('mouseup', handleMouseUp);
             window.addEventListener('touchend', handleMouseUp);
@@ -61,7 +63,7 @@ export default function TransformationSection() {
                         {/* After Image (Background) - Clean Finished Roof */}
                         <div className="absolute inset-0">
                             <Image
-                                src="/images/cool-roof-heat-resistant-paint.jpg"
+                                src="/images/after.webp"
                                 alt="After Waterproofing Treatment"
                                 fill
                                 className="object-cover"
@@ -79,7 +81,7 @@ export default function TransformationSection() {
                             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
                         >
                             <Image
-                                src="/images/roof-surface-preparation-cleaning.jpg"
+                                src="/images/before.webp"
                                 alt="Before Waterproofing"
                                 fill
                                 className="object-cover"

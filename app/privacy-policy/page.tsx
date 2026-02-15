@@ -6,8 +6,8 @@ import { Metadata } from 'next';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | Ahsan Traders',
-    description: 'Privacy Policy for Ahsan Traders - How we collect, use, and protect your information.',
+    title: 'Privacy Policy | Ahsaan Traders',
+    description: 'Privacy Policy for Ahsaan Traders - How we collect, use, and protect your information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -16,12 +16,10 @@ export default function PrivacyPolicyPage() {
             <Breadcrumb
                 title="Privacy Policy"
                 subtitle="How we handle your information"
-                backgroundImage="/images/Working1.jpg"
                 items={[
                     { label: 'Home', href: '/' },
                     { label: 'Privacy Policy' },
                 ]}
-                minHeight="300px"
             />
 
             <section className="py-12 sm:py-16 md:py-20 bg-white">
@@ -61,7 +59,7 @@ export default function PrivacyPolicyPage() {
                             For privacy-related questions, contact us:
                         </p>
                         <ul className="list-none text-slate-600 space-y-2">
-                            <li><strong>Email:</strong> ahsaantraders79@gmail.com</li>
+                            <li><strong>Email:</strong> info@ahsaantraders.com</li>
                             <li><strong>Phone:</strong> 0321-2420460</li>
                         </ul>
                     </div>

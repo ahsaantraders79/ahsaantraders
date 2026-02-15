@@ -40,6 +40,7 @@ export function ServiceCard({
 
     return (
         <CardWrapper
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             {...(wrapperProps as any)}
             className={`
         group block bg-white rounded-xl overflow-hidden
@@ -62,7 +63,6 @@ export function ServiceCard({
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         priority={priority}
                         loading={priority ? 'eager' : 'lazy'}
-                        quality={80}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
@@ -126,6 +126,7 @@ export function ProjectCard({
 
     return (
         <CardWrapper
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             {...(wrapperProps as any)}
             className={`
         group relative block rounded-xl overflow-hidden
@@ -145,7 +146,6 @@ export function ProjectCard({
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 priority={priority}
                 loading={priority ? 'eager' : 'lazy'}
-                quality={80}
             />
 
             {/* Overlay */}

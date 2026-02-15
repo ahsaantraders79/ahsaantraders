@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================
-   AHSAN TRADERS - OPTIMIZED DESIGN SYSTEM
+   Ahsaan TRADERS - OPTIMIZED DESIGN SYSTEM
    Following Reference Design Patterns
    
    PERFORMANCE OPTIMIZATIONS:
@@ -405,6 +405,7 @@ select:focus {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -412,6 +413,65 @@ select:focus {
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* ── Announcement Bar Marquee (Mobile) ── */
+@keyframes marquee-scroll-fix {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.announcement-marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  min-width: 100%;
+  animation: marquee-scroll-fix 30s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-marquee {
+    animation-duration: 30s !important;
+    animation-iteration-count: infinite !important;
+    transition-duration: 0s !important;
+  }
+}
+
+/* ── Mobile Call Button Shine ── */
+@keyframes call-shine {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+.mobile-call-shine {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: call-shine 2.5s ease-in-out infinite;
+}
+
+/* ── Header Auto-Hide on Scroll ── */
+.header-auto-hide {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.header-auto-hide.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-auto-hide.header-visible {
+  transform: translateY(0);
 }
