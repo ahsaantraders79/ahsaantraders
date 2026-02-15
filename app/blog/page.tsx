@@ -13,6 +13,9 @@ export const metadata: Metadata = {
         type: 'website',
         url: 'https://ahsaantraders.com/blog',
     },
+    alternates: {
+        canonical: 'https://ahsaantraders.com/blog',
+    },
 };
 
 export const revalidate = 3600;

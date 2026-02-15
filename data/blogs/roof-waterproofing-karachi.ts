@@ -50,7 +50,7 @@ export const post: BlogPost = {
         },
         {
             heading: 'Why Roofs Leak in Karachi',
-            content: `Karachi's climate is unique—extreme humidity, intense UV radiation, and sudden heavy monsoons. This cycle destroys standard concrete.
+            content: `Karachi's climate is uniqueextreme humidity, intense UV radiation, and sudden heavy monsoons. This cycle destroys standard concrete.
 
 **The "Thermal Shock" Effect:**
 During May/June, roof temperatures hit 60°C+. The concrete expands. At night (or during sudden rain), it cools and contracts. This constant movement creates hairline cracks (thermal expansion cracks) where water seeps in.
@@ -63,7 +63,7 @@ During May/June, roof temperatures hit 60°C+. The concrete expands. At night (o
         {
             type: 'warning',
             title: 'Stop Painting Over Moisture!',
-            content: 'Never apply waterproofing paint directly over damp patches (seelan). It will bubble and peel within weeks. You must identify the source—usually a crack on the external roof surface, not just the ceiling.'
+            content: 'Never apply waterproofing paint directly over damp patches (seelan). It will bubble and peel within weeks. You must identify the sourceusually a crack on the external roof surface, not just the ceiling.'
         },
         {
             heading: 'Comparison: Waterproofing Methods',

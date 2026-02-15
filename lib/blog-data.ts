@@ -141,7 +141,7 @@ Used for concrete repairs and rigid waterproofing.
 *   **Experienced Team:** Our workers know Karachi's specific building issues.
 *   **Premium Materials:** We are authorized applicators for top chemical brands.
 
-Protect your biggest investment—your home. Contact us today.`
+Protect your biggest investmentyour home. Contact us today.`
             }
         ]
     }
