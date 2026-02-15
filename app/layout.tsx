@@ -59,20 +59,11 @@ export const metadata: Metadata = {
     siteName: "Ahsaan Traders",
     title: "Ahsaan Traders | Waterproofing & Construction Solutions",
     description: "Expert waterproofing, heat proofing, and construction solutions in Karachi since 2017.",
-    images: [
-      {
-        url: "/images/ahsan-traders-promotional-banner.webp",
-        width: 1200,
-        height: 630,
-        alt: "Ahsaan Traders Waterproofing Services",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ahsaan Traders | Waterproofing & Construction Solutions",
     description: "Expert waterproofing, heat proofing, and construction solutions in Karachi since 2017.",
-    images: ["/images/ahsan-traders-promotional-banner.webp"],
   },
   robots: {
     index: true,

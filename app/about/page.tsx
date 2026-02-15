@@ -26,20 +26,11 @@ export const metadata: Metadata = {
         siteName: 'Ahsaan Traders',
         title: 'About Ahsaan Traders | Waterproofing Experts',
         description: 'Karachi\'s trusted waterproofing and construction company since 2017. 500+ projects, certified experts.',
-        images: [
-            {
-                url: '/images/professional-waterproofing-workers-team.webp',
-                width: 1200,
-                height: 630,
-                alt: 'Ahsaan Traders Professional Team',
-            },
-        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'About Ahsaan Traders | Waterproofing Experts',
         description: 'Karachi\'s trusted waterproofing and construction company since 2017.',
-        images: ['/images/professional-waterproofing-workers-team.webp'],
     },
     robots: {
         index: true,

@@ -27,20 +27,11 @@ export const metadata: Metadata = {
         siteName: 'Ahsaan Traders',
         title: 'Contact Ahsaan Traders | Free Quote in Karachi',
         description: 'Get a free waterproofing or construction quote. Call, WhatsApp, or fill our form. 500+ projects completed across Karachi.',
-        images: [
-            {
-                url: '/images/expert-construction-site-supervision.webp',
-                width: 1200,
-                height: 630,
-                alt: 'Contact Ahsaan Traders Karachi',
-            },
-        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Contact Ahsaan Traders | Free Quote',
         description: 'Get a free waterproofing or construction quote. Call, WhatsApp, or fill our form.',
-        images: ['/images/expert-construction-site-supervision.webp'],
     },
     robots: {
         index: true,

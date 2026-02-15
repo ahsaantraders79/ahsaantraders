@@ -53,10 +53,12 @@ export async function submitContactForm(prevState: any, formData: FormData): Pro
     }
 
     try {
+        const port = parseInt(process.env.SMTP_PORT || '587');
+
         const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST || 'smtp.zoho.com', // Default to standard host
-            port: parseInt(process.env.SMTP_PORT || '587'),
-            secure: false, // Use false for port 587
+            host: process.env.SMTP_HOST || 'smtp.zoho.com',
+            port: port,
+            secure: port === 465, // secure:true for port 465, secure:false for port 587
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD,

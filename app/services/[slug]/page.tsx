@@ -59,20 +59,11 @@ export async function generateMetadata({
             siteName: 'Ahsaan Traders',
             title: service.metaTitle,
             description: service.metaDescription,
-            images: [
-                {
-                    url: service.ogImage,
-                    width: 1200,
-                    height: 630,
-                    alt: service.title,
-                },
-            ],
         },
         twitter: {
             card: 'summary_large_image',
             title: service.metaTitle,
             description: service.metaDescription,
-            images: [service.ogImage],
         },
         robots: {
             index: true,

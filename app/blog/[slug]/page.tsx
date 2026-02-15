@@ -36,7 +36,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             publishedTime: post.publishDate,
             modifiedTime: post.updatedDate,
             authors: [post.author],
-            images: [{ url: `https://ahsaantraders.com${post.coverImage}`, width: 1200, height: 630, alt: post.title }],
             url: `https://ahsaantraders.com/blog/${post.slug}`,
             siteName: 'Ahsaan Traders',
             locale: 'en_PK',
@@ -45,7 +44,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
-            images: [`https://ahsaantraders.com${post.coverImage}`],
         },
         robots: { index: true, follow: true },
     };
