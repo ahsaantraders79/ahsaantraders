@@ -54,14 +54,16 @@ export async function submitContactForm(prevState: any, formData: FormData): Pro
 
     try {
         const port = parseInt(process.env.SMTP_PORT || '587');
+        const smtpUser = (process.env.SMTP_USER || '').trim();
+        const smtpPass = (process.env.SMTP_PASSWORD || '').trim();
 
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.zoho.com',
             port: port,
             secure: port === 465, // secure:true for port 465, secure:false for port 587
             auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASSWORD,
+                user: smtpUser,
+                pass: smtpPass,
             },
         });
 
@@ -70,8 +72,8 @@ export async function submitContactForm(prevState: any, formData: FormData): Pro
         console.log('SMTP Connection Established Successfully');
 
         const mailOptions = {
-            from: `"Ahsaan Traders Website" <${process.env.SMTP_USER}>`,
-            to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
+            from: `"Ahsaan Traders Website" <${smtpUser}>`,
+            to: (process.env.CONTACT_EMAIL || '').trim() || smtpUser,
             replyTo: email, // Allow reply directly to customer
             subject: `New Service Inquiry: ${service}`,
             html: `
