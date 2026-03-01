@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Ahsaan Traders',
     description: 'Privacy Policy for Ahsaan Traders - How we collect, use, and protect your information.',
     alternates: {
-        canonical: 'https://ahsaantraders.com/privacy-policy',
+        canonical: 'https://www.ahsaantraders.com/privacy-policy',
     },
 };
 

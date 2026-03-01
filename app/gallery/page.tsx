@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     description: 'Browse Ahsaan Traders\' gallery of waterproofing, heat proofing & construction projects in Karachi. Professional quality work showcased in photos.',
     keywords: 'waterproofing gallery karachi, construction photos, roof waterproofing images, heat proofing before after, project photos karachi',
     alternates: {
-        canonical: 'https://ahsaantraders.com/gallery',
+        canonical: 'https://www.ahsaantraders.com/gallery',
     },
     openGraph: {
         type: 'website',
         locale: 'en_PK',
-        url: 'https://ahsaantraders.com/gallery',
+        url: 'https://www.ahsaantraders.com/gallery',
         siteName: 'Ahsaan Traders',
         title: 'Project Gallery | Ahsaan Traders',
         description: 'Browse our gallery of waterproofing and construction projects completed across Karachi.',

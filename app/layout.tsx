@@ -51,11 +51,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Ahsaan Traders" }],
   creator: "Ahsaan Traders",
   publisher: "Ahsaan Traders",
-  metadataBase: new URL("https://ahsaantraders.com"),
+  metadataBase: new URL("https://www.ahsaantraders.com"),
   openGraph: {
     type: "website",
     locale: "en_PK",
-    url: "https://ahsaantraders.com",
+    url: "https://www.ahsaantraders.com",
     siteName: "Ahsaan Traders",
     title: "Ahsaan Traders | Waterproofing & Construction Solutions",
     description: "Expert waterproofing, heat proofing, and construction solutions in Karachi since 2017.",
@@ -96,8 +96,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "name": "Ahsaan Traders",
-  "image": "https://ahsaantraders.com/logo.webp",
-  "logo": "https://ahsaantraders.com/logo.webp",
+  "image": "https://www.ahsaantraders.com/logo.webp",
+  "logo": "https://www.ahsaantraders.com/logo.webp",
   "description": "Karachi's trusted provider of waterproofing, heat proofing, and construction solutions. Quality materials, expert workmanship, guaranteed results.",
   "address": {
     "@type": "PostalAddress",
@@ -112,7 +112,7 @@ const localBusinessSchema = {
     "latitude": 24.8093,
     "longitude": 67.0560
   },
-  "url": "https://ahsaantraders.com",
+  "url": "https://www.ahsaantraders.com",
   "telephone": "+923212420460",
   "priceRange": "₨₨",
   "openingHoursSpecification": [
@@ -141,10 +141,10 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Ahsaan Traders",
-  "url": "https://ahsaantraders.com",
+  "url": "https://www.ahsaantraders.com",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://ahsaantraders.com/services?q={search_term_string}",
+    "target": "https://www.ahsaantraders.com/services?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };

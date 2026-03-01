@@ -23,7 +23,7 @@ export default function BreadcrumbJsonLd({ items, title }: BreadcrumbJsonLdProps
             '@type': 'ListItem',
             position: index + 1,
             name: item.label,
-            item: item.href ? `https://ahsaantraders.com${item.href}` : undefined,
+            item: item.href ? `https://www.ahsaantraders.com${item.href}` : undefined,
         })),
     };
 

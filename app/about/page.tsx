@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     description: 'Learn about Ahsaan Traders Karachi\'s trusted waterproofing and construction company. 500+ projects completed, certified experts, and 5-year warranty on all work.',
     keywords: 'about Ahsaan traders, waterproofing company karachi, construction company karachi, waterproofing experts, trusted contractors karachi',
     alternates: {
-        canonical: 'https://ahsaantraders.com/about',
+        canonical: 'https://www.ahsaantraders.com/about',
     },
     openGraph: {
         type: 'website',
         locale: 'en_PK',
-        url: 'https://ahsaantraders.com/about',
+        url: 'https://www.ahsaantraders.com/about',
         siteName: 'Ahsaan Traders',
         title: 'About Ahsaan Traders | Waterproofing Experts',
         description: 'Karachi\'s trusted waterproofing and construction company since 2017. 500+ projects, certified experts.',

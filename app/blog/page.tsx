@@ -11,10 +11,10 @@ export const metadata: Metadata = {
         title: 'Ahsaan Traders Blog - Expert Insights',
         description: 'Practical guides for waterproofing and construction in Karachi.',
         type: 'website',
-        url: 'https://ahsaantraders.com/blog',
+        url: 'https://www.ahsaantraders.com/blog',
     },
     alternates: {
-        canonical: 'https://ahsaantraders.com/blog',
+        canonical: 'https://www.ahsaantraders.com/blog',
     },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Terms of Service | Ahsaan Traders',
     description: 'Terms and conditions for using Ahsaan Traders services.',
     alternates: {
-        canonical: 'https://ahsaantraders.com/terms',
+        canonical: 'https://www.ahsaantraders.com/terms',
     },
 };
 

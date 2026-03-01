@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: post.excerpt,
         keywords: [post.primaryKeyword, ...post.tags],
         alternates: {
-            canonical: `https://ahsaantraders.com/blog/${post.slug}`,
+            canonical: `https://www.ahsaantraders.com/blog/${post.slug}`,
         },
         openGraph: {
             title: post.title,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             publishedTime: post.publishDate,
             modifiedTime: post.updatedDate,
             authors: [post.author],
-            url: `https://ahsaantraders.com/blog/${post.slug}`,
+            url: `https://www.ahsaantraders.com/blog/${post.slug}`,
             siteName: 'Ahsaan Traders',
             locale: 'en_PK',
         },
@@ -64,17 +64,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         headline: post.title,
-        image: [`https://ahsaantraders.com${post.coverImage}`],
+        image: [`https://www.ahsaantraders.com${post.coverImage}`],
         datePublished: post.publishDate,
         dateModified: post.updatedDate,
-        author: { '@type': 'Person', name: post.author, url: 'https://ahsaantraders.com' },
+        author: { '@type': 'Person', name: post.author, url: 'https://www.ahsaantraders.com' },
         publisher: {
             '@type': 'Organization',
             name: 'Ahsaan Traders',
-            logo: { '@type': 'ImageObject', url: 'https://ahsaantraders.com/logo.webp' },
+            logo: { '@type': 'ImageObject', url: 'https://www.ahsaantraders.com/logo.webp' },
         },
         description: post.excerpt,
-        mainEntityOfPage: { '@type': '.webpage', '@id': `https://ahsaantraders.com/blog/${post.slug}` },
+        mainEntityOfPage: { '@type': '.webpage', '@id': `https://www.ahsaantraders.com/blog/${post.slug}` },
         keywords: [post.primaryKeyword, ...post.tags].join(', '),
     };
 

@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     description: 'Explore Ahsaan Traders\' professional services roof waterproofing, basement treatment, heat proofing, construction chemicals, cemented blocks & ready-mix concrete in Karachi.',
     keywords: 'waterproofing services karachi, heat proofing karachi, basement waterproofing, roof waterproofing, construction chemicals, ready mix concrete karachi, cemented blocks supply',
     alternates: {
-        canonical: 'https://ahsaantraders.com/services',
+        canonical: 'https://www.ahsaantraders.com/services',
     },
     openGraph: {
         type: 'website',
         locale: 'en_PK',
-        url: 'https://ahsaantraders.com/services',
+        url: 'https://www.ahsaantraders.com/services',
         siteName: 'Ahsaan Traders',
         title: 'Our Services | Ahsaan Traders',
         description: 'Professional waterproofing, heat proofing, and construction solutions in Karachi since 2017.',

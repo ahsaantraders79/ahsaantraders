@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     description: 'View Ahsaan Traders\' completed waterproofing, heat proofing & construction projects in Karachi. Before/after photos, case studies & client results.',
     keywords: 'waterproofing projects karachi, construction portfolio, roof waterproofing results, before after waterproofing, Ahsaan traders projects',
     alternates: {
-        canonical: 'https://ahsaantraders.com/projects',
+        canonical: 'https://www.ahsaantraders.com/projects',
     },
     openGraph: {
         type: 'website',
         locale: 'en_PK',
-        url: 'https://ahsaantraders.com/projects',
+        url: 'https://www.ahsaantraders.com/projects',
         siteName: 'Ahsaan Traders',
         title: 'Our Projects | Ahsaan Traders Portfolio',
         description: 'View completed waterproofing & construction projects across Karachi with before/after results.',

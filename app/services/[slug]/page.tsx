@@ -50,12 +50,12 @@ export async function generateMetadata({
         description: service.metaDescription,
         keywords: service.keywords,
         alternates: {
-            canonical: `https://ahsaantraders.com/services/${service.slug}`,
+            canonical: `https://www.ahsaantraders.com/services/${service.slug}`,
         },
         openGraph: {
             type: 'website',
             locale: 'en_PK',
-            url: `https://ahsaantraders.com/services/${service.slug}`,
+            url: `https://www.ahsaantraders.com/services/${service.slug}`,
             siteName: 'Ahsaan Traders',
             title: service.metaTitle,
             description: service.metaDescription,
@@ -102,7 +102,7 @@ export default async function ServiceDetailPage({
         "provider": {
             "@type": "HomeAndConstructionBusiness",
             "name": "Ahsaan Traders",
-            "url": "https://ahsaantraders.com",
+            "url": "https://www.ahsaantraders.com",
             "telephone": "+923212420460",
             "priceRange": "$$",
             "address": {
@@ -124,8 +124,8 @@ export default async function ServiceDetailPage({
             "name": "Karachi",
             "containedInPlace": { "@type": "State", "name": "Sindh" }
         },
-        "url": `https://ahsaantraders.com/services/${service.slug}`,
-        "image": `https://ahsaantraders.com${service.ogImage}`,
+        "url": `https://www.ahsaantraders.com/services/${service.slug}`,
+        "image": `https://www.ahsaantraders.com${service.ogImage}`,
     };
 
     // ── JSON-LD: FAQ Schema ──

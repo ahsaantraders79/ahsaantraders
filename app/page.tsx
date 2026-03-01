@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   title: "Ahsaan Traders | Waterproofing & Construction Solutions in Karachi",
   description: "Leading provider of waterproofing, heat proofing, construction chemicals, cemented blocks, and ready-mix concrete supplies in Karachi. Trusted quality since 2017. Contact: 0321-2420460",
   alternates: {
-    canonical: "https://ahsaantraders.com",
+    canonical: "https://www.ahsaantraders.com",
   },
 };
 

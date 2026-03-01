@@ -5,7 +5,7 @@ import { getAllPosts } from '@/data/blogs';
 export const revalidate = 86400; // Regenerate sitemap every 24 hours
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://ahsaantraders.com';
+    const baseUrl = 'https://www.ahsaantraders.com';
 
     // Static pages
     const staticPages: MetadataRoute.Sitemap = [

@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     description: 'Contact Ahsaan Traders for waterproofing, heat proofing & construction services in Karachi. Call 0321-2420460 for a free site inspection. Serving DHA, Clifton, Gulshan & all Karachi.',
     keywords: 'contact ahsaan traders, waterproofing quote karachi, free estimate waterproofing, construction services contact, waterproofing company karachi phone number, roof leakage repair karachi',
     alternates: {
-        canonical: 'https://ahsaantraders.com/contact',
+        canonical: 'https://www.ahsaantraders.com/contact',
     },
     openGraph: {
         type: 'website',
         locale: 'en_PK',
-        url: 'https://ahsaantraders.com/contact',
+        url: 'https://www.ahsaantraders.com/contact',
         siteName: 'Ahsaan Traders',
         title: 'Contact Ahsaan Traders | Free Quote in Karachi',
         description: 'Get a free waterproofing or construction quote. Call, WhatsApp, or fill our form. 500+ projects completed across Karachi.',
@@ -82,7 +82,7 @@ export default function ContactPage() {
         '@type': 'LocalBusiness',
         name: 'Ahsaan Traders',
         description: 'Professional waterproofing, heat proofing, and construction services in Karachi. Established 2017, 500+ projects completed.',
-        url: 'https://ahsaantraders.com',
+        url: 'https://www.ahsaantraders.com',
         telephone: '+923212420460',
         email: 'info@ahsaantraders.com',
         address: {
@@ -109,7 +109,7 @@ export default function ContactPage() {
             { '@type': 'State', name: 'Sindh' },
         ],
         priceRange: '$$',
-        image: 'https://ahsaantraders.com/images/expert-construction-site-supervision.webp',
+        image: 'https://www.ahsaantraders.com/images/expert-construction-site-supervision.webp',
         sameAs: [
             'https://wa.me/923212420460',
         ],
@@ -135,7 +135,7 @@ export default function ContactPage() {
         '@type': 'ContactPage',
         name: 'Contact Ahsaan Traders',
         description: 'Get in touch with Ahsaan Traders for waterproofing and construction services in Karachi.',
-        url: 'https://ahsaantraders.com/contact',
+        url: 'https://www.ahsaantraders.com/contact',
         mainEntity: {
             '@type': 'LocalBusiness',
             name: 'Ahsaan Traders',
